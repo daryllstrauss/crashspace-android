@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@android:drawable/ic_menu_camera" android:title="@string/TakePicture" android:id="@+id/TakePicture_id"></item>
+<!--     <item android:icon="@android:drawable/ic_menu_video" android:title="@string/TakeVideo" android:id="@+id/TakeVideo_id"></item> -->
+</menu>

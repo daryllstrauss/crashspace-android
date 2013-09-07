@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<ViewAnimator android:id="@+id/flipper_id" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+	  <WebView android:id="@+id/status_id" android:layout_weight="1" android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+	  <LinearLayout
+	  	android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="0.05in">
+	  	<TextView android:textSize="20dp" android:text="@string/User" android:layout_height="wrap_content" android:layout_width="wrap_content" android:minWidth="@dimen/LabelWidth"/>
+	  	<EditText android:inputType="textPersonName" android:hint="@string/NameHint" android:imeOptions="actionNext" android:layout_width="fill_parent" android:id="@+id/user_id" 
+	  		android:minEms="20" android:layout_height="wrap_content"/>
+	  </LinearLayout>
+	  <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	  	<TextView android:text="@string/Minutes" android:layout_width="wrap_content" android:textSize="20dp" android:layout_height="wrap_content" android:minWidth="@dimen/LabelWidth"/>
+	    <SeekBar android:id="@+id/minute_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progress="60" android:max="240" android:layout_weight="1" android:focusable="false" />
+	    <TextView android:textSize="20dp" android:text="60" android:layout_width="wrap_content" android:id="@+id/minute_text_id" android:layout_height="wrap_content"/>
+	  </LinearLayout>
+	  
+	  <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	  	<TextView android:textSize="20dp" android:layout_width="wrap_content" android:text="@string/Message" android:layout_height="wrap_content" android:minWidth="@dimen/LabelWidth"/>
+	  	<EditText android:id="@+id/message_id" android:hint="@string/MessageHint" android:inputType="textShortMessage" android:layout_height="wrap_content" android:imeOptions="actionNext" android:layout_width="fill_parent" android:text="@string/DefaultMessage"/>
+	  </LinearLayout>
+	  <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:gravity="center_horizontal">
+	    <Button android:id="@+id/button_id" android:layout_height="wrap_content" android:imeOptions="actionDone" android:layout_width="wrap_content" android:text="@string/Update" android:paddingLeft="0.05in"/>
+	  </LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+		<TextView android:textSize="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Crash Cam to Flickr"/>
+		<ImageView android:id="@+id/imageDisplay_id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"/>
+		<EditText android:id="@+id/CrashCamMessage_id" android:hint="@string/CrashCamHint" android:inputType="textShortMessage" android:layout_height="wrap_content" android:layout_width="fill_parent"/>
+		<Button android:id="@+id/flickrButton_id" android:layout_height="wrap_content" android:layout_width="wrap_content" android:imeOptions="actionDone" android:text="@string/UploadToFlickr"/>
+	</LinearLayout>
+</ViewAnimator>
+</LinearLayout>

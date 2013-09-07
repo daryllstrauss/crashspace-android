@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+<string name="app_name">CrashSpace</string>
+
+
+<string name="NameHint">Your Name</string>
+<string name="DefaultMessage">I am here</string>
+<string name="MessageHint">The message to post</string>
+<string name="Minutes">Minutes</string><string name="User">User</string>
+
+<string name="Update">Check In</string>
+<string name="Message">Message</string>
+<dimen name="LabelWidth">0.6in</dimen>
+
+<string name="BaseURL">http://crashspacela.com/sign/index.php</string>
+<string name="TakePicture">Take Picture</string>
+<string name="CrashCamHint">Image Title</string>
+<string name="UploadToFlickr">Upload to Flickr</string>
+<string name="PasswordPrompt">CrashSpace Flickr Password</string>
+<string name="TakeVideo">Take Video</string>
+</resources>
